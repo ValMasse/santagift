@@ -8,6 +8,8 @@ import { CadeauCardComponent } from './components/cadeau-card/cadeau-card.compon
 import { CadeauListComponent } from './components/cadeau-list/cadeau-list.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HeaderComponent } from './pages/header/header.component';
     CadeauCardComponent,
     CadeauListComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ErrorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
