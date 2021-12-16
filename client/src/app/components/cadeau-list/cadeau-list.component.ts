@@ -10,9 +10,18 @@ import { CadeauxHttpService } from 'src/app/services/cadeaux-http.service';
 export class CadeauListComponent implements OnInit {
 
 
-  constructor() { }
+  cadeaux : Cadeau[] = [];
+
+  constructor(private service: CadeauxHttpService) { }
 
   ngOnInit(): void {
+    this.getCadeaux();
+  }
+
+  getCadeaux(){
+    this.service.getAll().subscribe(data => {
+      this.cadeaux = data;
+    });
   }
 
   
