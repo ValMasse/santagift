@@ -22,7 +22,7 @@ export class CadeauxHttpService {
   }
 
   delete(id: string): Observable<Cadeau>{
-    return this.http.delete<Cadeau>(`${apiUrl}/${id}`);
+    return this.http.delete<Cadeau>(apiUrl+"/"+id);
   }
 
 }

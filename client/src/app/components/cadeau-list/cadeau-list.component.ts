@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Cadeau } from 'src/app/models/cadeau';
-import { CadeauxHttpService } from 'src/app/services/cadeaux-http.service';
 
 @Component({
   selector: 'app-cadeau-list',
@@ -9,21 +8,15 @@ import { CadeauxHttpService } from 'src/app/services/cadeaux-http.service';
 })
 export class CadeauListComponent implements OnInit {
 
+  // liste de cadeaux sur laquelle on fait le forEach
+  @Input() cadeaux : Cadeau[] = [];
 
-  cadeaux : Cadeau[] = [];
-
-  constructor(private service: CadeauxHttpService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getCadeaux();
   }
 
-  getCadeaux(){
-    this.service.getAll().subscribe(data => {
-      console.log(data);
-      this.cadeaux = data;
-    });
-  }
+
 
   
 
