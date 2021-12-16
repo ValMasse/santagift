@@ -17,4 +17,12 @@ export class CadeauxHttpService {
     return this.http.get<Cadeau[]>(apiUrl);
   }
 
+  save(cadeau: Cadeau): Observable<Cadeau>{
+    return this.http.post<Cadeau>(apiUrl, cadeau);
+  }
+
+  delete(id: string): Observable<Cadeau>{
+    return this.http.delete<Cadeau>(`${apiUrl}/${id}`);
+  }
+
 }
