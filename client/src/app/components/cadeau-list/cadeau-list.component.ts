@@ -20,6 +20,7 @@ export class CadeauListComponent implements OnInit {
 
   getCadeaux(){
     this.service.getAll().subscribe(data => {
+      console.log(data);
       this.cadeaux = data;
     });
   }

@@ -2,7 +2,7 @@ export class Cadeau {
 
     id !: string;
 
-    bla !: string;
+    name !: string;
 
     imageUrl !: string;
 

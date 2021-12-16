@@ -8,8 +8,7 @@ import { Cadeau } from 'src/app/models/cadeau';
 })
 export class CadeauCardComponent implements OnInit {
 
-  @Input()
-  cadeau !: Cadeau;
+  @Input() cadeau !: Cadeau;
 
   constructor() { }
 
