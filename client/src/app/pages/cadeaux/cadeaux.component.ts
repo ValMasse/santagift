@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Cadeau } from 'src/app/models/cadeau';
+import { CadeauxHttpService } from 'src/app/services/cadeaux-http.service';
 
 @Component({
   selector: 'app-cadeaux',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadeauxComponent implements OnInit {
 
-  constructor() { }
+  
+
+  cadeaux : Cadeau[] = [];
+
+  constructor(private service: CadeauxHttpService) { }
 
   ngOnInit(): void {
+    this.getCadeaux();
+  }
+
+  getCadeaux(){
+    this.service.getAll().subscribe(data => {
+      this.cadeaux = data;
+    });
   }
 
 }

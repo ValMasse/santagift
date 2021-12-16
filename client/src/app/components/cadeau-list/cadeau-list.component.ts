@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Cadeau } from 'src/app/models/cadeau';
+import { CadeauxHttpService } from 'src/app/services/cadeaux-http.service';
 
 @Component({
   selector: 'app-cadeau-list',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadeauListComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
