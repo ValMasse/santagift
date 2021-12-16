@@ -4,6 +4,6 @@ export class Cadeau {
 
     name !: string;
 
-    imageUrl !: string;
+    urlImage !: string;
 
 }

@@ -14,7 +14,7 @@ export class CadeauxHttpService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Cadeau[]>{
-    return this.http.get<Cadeau[]>(apiUrl)
+    return this.http.get<Cadeau[]>(apiUrl);
   }
 
 }
