@@ -1,2 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css'
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-image: url(https://media-blog.cdnandroid.com/wp-content/uploads/sites/5/2019/12/23212723/Best-Secret-Santa-Apps2.jpg);
+    background-size: cover;
+}

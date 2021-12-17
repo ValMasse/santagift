@@ -12,7 +12,9 @@ export class CadeauFormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {
     this.cadeauForm = this.formBuilder.group({
-      
+      name:"",
+      urlImage:"",
+      seller:""
     })
    }
 
