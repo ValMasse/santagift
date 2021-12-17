@@ -6,4 +6,6 @@ export class Cadeau {
 
     urlImage !: string;
 
+    seller !: string;
+
 }
