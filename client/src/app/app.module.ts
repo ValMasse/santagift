@@ -11,6 +11,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadeauFormComponent } from './pages/cadeau-form/cadeau-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    CadeauFormComponent
   ],
   imports: [
     BrowserModule,
