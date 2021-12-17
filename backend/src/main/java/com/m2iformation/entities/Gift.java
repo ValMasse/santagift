@@ -16,4 +16,5 @@ public class Gift {
     private String id;
     private String name;
     private String urlImage;
+    private String seller;
 }
